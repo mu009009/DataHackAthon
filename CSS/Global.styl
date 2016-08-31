@@ -137,6 +137,10 @@ body{
   font-size: MiniFontSize;
 }
 
+.SmallSizeText{
+  font-size: SmallFontSize;
+}
+
 .ContentTextTitle{
   font-size: LargeContentSize;
   color: BlackText;
@@ -149,8 +153,9 @@ body{
 }
 
 .TitleTimePartPaddingChange{
-  padding-left: 6px;
-  padding-right: 6px;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .ContentText{
@@ -254,10 +259,11 @@ body{
 	color: DrakButtonTransColor;
 }
 .FontIconSize{
-	font-size: NormalFontSize;
+	font-size: ThirdSubTitleSize;
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
 #CompanyIconTitleText{
 	font-weight: bold;
 	font-size: LargeContentSize;
@@ -265,29 +271,39 @@ body{
 	cursor: pointer;
 }
 #NavBarPart{
-	padding-top: 7px;
-	padding-bottom: 7px;
+	padding-top: auto;
+	padding-bottom: auto;
 	background-color: navbarButtonBlue;
 	border-color: transparent;
 	text-align: center;
 	min-height: 70px;
 	border-radius: 0%;
 }
+
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
-	background-color: inherit;
+  transition-duration: shortDurationTime;
+  background-color: inherit;
 	border-color: transparent;
 	color: DrakButtonTransColor;
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-right: 12px;
 }
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a{
+  transition-duration: shortDurationTime;
+  color: ShadoWhiteText;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
 #NavbarDetailPart{
 	background-color: transparent;
 	padding-left: 1%;
 	padding-right: 1%;
-	padding-bottom: 5px;
 	float: right;
-  font-size: MiniFontSize;
 }
 #DraopDownMenu1{
 	color: DrakButtonTransColor;
@@ -298,9 +314,12 @@ body{
 #NavTitleCompanyIcon{
 	position: absolute;
 	margin-top: -10px;
-	min-width: 150px;
+	width: 161.38px;
+  height: 50px;
 	max-height: 60px;
-	width: 10%;
+  background-image: url(../Resource/Icons/Stratifyd/Stratifyd-Logo-Simple-white.png);
+  background-size: cover;
+  background-position: center center;
 }
 #FirstTry{
 	font-size: LargeContentSize;

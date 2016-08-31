@@ -40,8 +40,19 @@
   height: 105px;
   margin-bottom: 30px;
 }
+.TimeTotoalBox{
+  width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
 .TimeText{
+  font-size: UtlFontSize;
   margin-bottom: 5px;
+}
+
+.TimeUnitText{
+  font-size: MiddleSize;
 }
 
 #TitleBar{
@@ -62,10 +73,45 @@
 	background-size: cover;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 766px) {
 	#MainAttarctText{
-		font-size: 3em;
+		font-size: 2.5em;
+    margin-top: 0px;
 	}
+  .TimeTotoalBox{
+    width: 280px;
+  }
+  .TimeCountPart{
+    width: 55px;
+    height: 55px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .TimeText{
+    margin-bottom: 6px;
+  }
+  .jumbotron h1{
+    font-size: ThirdSubTitleSize;
+  }
+  .TimeUnitText{
+    font-size: SmallFontSize;
+  }
+  .TitleTimePartPaddingChange{
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  #Daytext{
+    innerHTML: D;
+  }
+  #Hrtext{
+    innerHTML: Hr;
+  }
+  #Mintext{
+    innerHTML: Min;
+  }
+  #Sectext{
+    innerHTML: Sec;
+  }
 }
 
 @media screen and (max-width: 992px) {
